@@ -1,0 +1,7 @@
+[package]
+name = "fuzz_survey"
+version = "0.1.0"
+authors = ["Jonathan Watmough <jonathan.watmough@gmail.com>"]
+
+[dependencies]
+itertools = "0.5.4"
