@@ -1,0 +1,169 @@
+UWI,Name,Method,North Reference,Md,Inclination,Azimuth
+test well,test-2pt-avg-grid,Average Angle,Grid North,0,0,0
+test well,test-2pt-avg-grid,Average Angle,Grid North,6000,90,180
+test well,test-3pt-avg-grid,Average Angle,Grid North,0,0,0
+test well,test-3pt-avg-grid,Average Angle,Grid North,1000,0,0
+test well,test-3pt-avg-grid,Average Angle,Grid North,6000,90,180
+test well,test-unk-avg-grid,Average Angle,Grid North,0,0,0
+test well,test-unk-avg-grid,Average Angle,Grid North,6000,90,180
+test well,test-2pt-avg-mag,Average Angle,Magnetic North,0,0,0
+test well,test-2pt-avg-mag,Average Angle,Magnetic North,6000,90,180
+test well,test-3pt-avg-mag,Average Angle,Magnetic North,0,0,0
+test well,test-3pt-avg-mag,Average Angle,Magnetic North,1000,0,0
+test well,test-3pt-avg-mag,Average Angle,Magnetic North,6000,90,180
+test well,test-unk-avg-mag,Average Angle,Magnetic North,0,0,0
+test well,test-unk-avg-mag,Average Angle,Magnetic North,6000,90,180
+test well,test-2pt-avg-true,Average Angle,True North,0,0,0
+test well,test-2pt-avg-true,Average Angle,True North,6000,90,180
+test well,test-3pt-avg-true,Average Angle,True North,0,0,0
+test well,test-3pt-avg-true,Average Angle,True North,1000,0,0
+test well,test-3pt-avg-true,Average Angle,True North,6000,90,180
+test well,test-unk-avg-true,Average Angle,True North,0,0,0
+test well,test-unk-avg-true,Average Angle,True North,6000,90,180
+test well,test-2pt-avg-unk,Average Angle,,0,0,0
+test well,test-2pt-avg-unk,Average Angle,,6000,90,180
+test well,test-3pt-avg-unk,Average Angle,,0,0,0
+test well,test-3pt-avg-unk,Average Angle,,1000,0,0
+test well,test-3pt-avg-unk,Average Angle,,6000,90,180
+test well,test-unk-avg-unk,Average Angle,,0,0,0
+test well,test-unk-avg-unk,Average Angle,,6000,90,180
+test well,test-2pt-bal-grid,Balanced Angle,Grid North,0,0,0
+test well,test-2pt-bal-grid,Balanced Angle,Grid North,6000,90,180
+test well,test-3pt-bal-grid,Balanced Angle,Grid North,0,0,0
+test well,test-3pt-bal-grid,Balanced Angle,Grid North,1000,0,0
+test well,test-3pt-bal-grid,Balanced Angle,Grid North,6000,90,180
+test well,test-unk-bal-grid,Balanced Angle,Grid North,0,0,0
+test well,test-unk-bal-grid,Balanced Angle,Grid North,6000,90,180
+test well,test-2pt-bal-mag,Balanced Angle,Magnetic North,0,0,0
+test well,test-2pt-bal-mag,Balanced Angle,Magnetic North,6000,90,180
+test well,test-3pt-bal-mag,Balanced Angle,Magnetic North,0,0,0
+test well,test-3pt-bal-mag,Balanced Angle,Magnetic North,1000,0,0
+test well,test-3pt-bal-mag,Balanced Angle,Magnetic North,6000,90,180
+test well,test-unk-bal-mag,Balanced Angle,Magnetic North,0,0,0
+test well,test-unk-bal-mag,Balanced Angle,Magnetic North,6000,90,180
+test well,test-2pt-bal-true,Balanced Angle,True North,0,0,0
+test well,test-2pt-bal-true,Balanced Angle,True North,6000,90,180
+test well,test-3pt-bal-true,Balanced Angle,True North,0,0,0
+test well,test-3pt-bal-true,Balanced Angle,True North,1000,0,0
+test well,test-3pt-bal-true,Balanced Angle,True North,6000,90,180
+test well,test-unk-bal-true,Balanced Angle,True North,0,0,0
+test well,test-unk-bal-true,Balanced Angle,True North,6000,90,180
+test well,test-2pt-bal-unk,Balanced Angle,,0,0,0
+test well,test-2pt-bal-unk,Balanced Angle,,6000,90,180
+test well,test-3pt-bal-unk,Balanced Angle,,0,0,0
+test well,test-3pt-bal-unk,Balanced Angle,,1000,0,0
+test well,test-3pt-bal-unk,Balanced Angle,,6000,90,180
+test well,test-unk-bal-unk,Balanced Angle,,0,0,0
+test well,test-unk-bal-unk,Balanced Angle,,6000,90,180
+test well,test-2pt-min-grid,Minium Curvature,Grid North,0,0,0
+test well,test-2pt-min-grid,Minium Curvature,Grid North,6000,90,180
+test well,test-3pt-min-grid,Minium Curvature,Grid North,0,0,0
+test well,test-3pt-min-grid,Minium Curvature,Grid North,1000,0,0
+test well,test-3pt-min-grid,Minium Curvature,Grid North,6000,90,180
+test well,test-unk-min-grid,Minium Curvature,Grid North,0,0,0
+test well,test-unk-min-grid,Minium Curvature,Grid North,6000,90,180
+test well,test-2pt-min-mag,Minium Curvature,Magnetic North,0,0,0
+test well,test-2pt-min-mag,Minium Curvature,Magnetic North,6000,90,180
+test well,test-3pt-min-mag,Minium Curvature,Magnetic North,0,0,0
+test well,test-3pt-min-mag,Minium Curvature,Magnetic North,1000,0,0
+test well,test-3pt-min-mag,Minium Curvature,Magnetic North,6000,90,180
+test well,test-unk-min-mag,Minium Curvature,Magnetic North,0,0,0
+test well,test-unk-min-mag,Minium Curvature,Magnetic North,6000,90,180
+test well,test-2pt-min-true,Minium Curvature,True North,0,0,0
+test well,test-2pt-min-true,Minium Curvature,True North,6000,90,180
+test well,test-3pt-min-true,Minium Curvature,True North,0,0,0
+test well,test-3pt-min-true,Minium Curvature,True North,1000,0,0
+test well,test-3pt-min-true,Minium Curvature,True North,6000,90,180
+test well,test-unk-min-true,Minium Curvature,True North,0,0,0
+test well,test-unk-min-true,Minium Curvature,True North,6000,90,180
+test well,test-2pt-min-unk,Minium Curvature,,0,0,0
+test well,test-2pt-min-unk,Minium Curvature,,6000,90,180
+test well,test-3pt-min-unk,Minium Curvature,,0,0,0
+test well,test-3pt-min-unk,Minium Curvature,,1000,0,0
+test well,test-3pt-min-unk,Minium Curvature,,6000,90,180
+test well,test-unk-min-unk,Minium Curvature,,0,0,0
+test well,test-unk-min-unk,Minium Curvature,,6000,90,180
+test well,test-2pt-rad-grid,Radius of Curvature,Grid North,0,0,0
+test well,test-2pt-rad-grid,Radius of Curvature,Grid North,6000,90,180
+test well,test-3pt-rad-grid,Radius of Curvature,Grid North,0,0,0
+test well,test-3pt-rad-grid,Radius of Curvature,Grid North,1000,0,0
+test well,test-3pt-rad-grid,Radius of Curvature,Grid North,6000,90,180
+test well,test-unk-rad-grid,Radius of Curvature,Grid North,0,0,0
+test well,test-unk-rad-grid,Radius of Curvature,Grid North,6000,90,180
+test well,test-2pt-rad-mag,Radius of Curvature,Magnetic North,0,0,0
+test well,test-2pt-rad-mag,Radius of Curvature,Magnetic North,6000,90,180
+test well,test-3pt-rad-mag,Radius of Curvature,Magnetic North,0,0,0
+test well,test-3pt-rad-mag,Radius of Curvature,Magnetic North,1000,0,0
+test well,test-3pt-rad-mag,Radius of Curvature,Magnetic North,6000,90,180
+test well,test-unk-rad-mag,Radius of Curvature,Magnetic North,0,0,0
+test well,test-unk-rad-mag,Radius of Curvature,Magnetic North,6000,90,180
+test well,test-2pt-rad-true,Radius of Curvature,True North,0,0,0
+test well,test-2pt-rad-true,Radius of Curvature,True North,6000,90,180
+test well,test-3pt-rad-true,Radius of Curvature,True North,0,0,0
+test well,test-3pt-rad-true,Radius of Curvature,True North,1000,0,0
+test well,test-3pt-rad-true,Radius of Curvature,True North,6000,90,180
+test well,test-unk-rad-true,Radius of Curvature,True North,0,0,0
+test well,test-unk-rad-true,Radius of Curvature,True North,6000,90,180
+test well,test-2pt-rad-unk,Radius of Curvature,,0,0,0
+test well,test-2pt-rad-unk,Radius of Curvature,,6000,90,180
+test well,test-3pt-rad-unk,Radius of Curvature,,0,0,0
+test well,test-3pt-rad-unk,Radius of Curvature,,1000,0,0
+test well,test-3pt-rad-unk,Radius of Curvature,,6000,90,180
+test well,test-unk-rad-unk,Radius of Curvature,,0,0,0
+test well,test-unk-rad-unk,Radius of Curvature,,6000,90,180
+test well,test-2pt-tang-grid,Tangential,Grid North,0,0,0
+test well,test-2pt-tang-grid,Tangential,Grid North,6000,90,180
+test well,test-3pt-tang-grid,Tangential,Grid North,0,0,0
+test well,test-3pt-tang-grid,Tangential,Grid North,1000,0,0
+test well,test-3pt-tang-grid,Tangential,Grid North,6000,90,180
+test well,test-unk-tang-grid,Tangential,Grid North,0,0,0
+test well,test-unk-tang-grid,Tangential,Grid North,6000,90,180
+test well,test-2pt-tang-mag,Tangential,Magnetic North,0,0,0
+test well,test-2pt-tang-mag,Tangential,Magnetic North,6000,90,180
+test well,test-3pt-tang-mag,Tangential,Magnetic North,0,0,0
+test well,test-3pt-tang-mag,Tangential,Magnetic North,1000,0,0
+test well,test-3pt-tang-mag,Tangential,Magnetic North,6000,90,180
+test well,test-unk-tang-mag,Tangential,Magnetic North,0,0,0
+test well,test-unk-tang-mag,Tangential,Magnetic North,6000,90,180
+test well,test-2pt-tang-true,Tangential,True North,0,0,0
+test well,test-2pt-tang-true,Tangential,True North,6000,90,180
+test well,test-3pt-tang-true,Tangential,True North,0,0,0
+test well,test-3pt-tang-true,Tangential,True North,1000,0,0
+test well,test-3pt-tang-true,Tangential,True North,6000,90,180
+test well,test-unk-tang-true,Tangential,True North,0,0,0
+test well,test-unk-tang-true,Tangential,True North,6000,90,180
+test well,test-2pt-tang-unk,Tangential,,0,0,0
+test well,test-2pt-tang-unk,Tangential,,6000,90,180
+test well,test-3pt-tang-unk,Tangential,,0,0,0
+test well,test-3pt-tang-unk,Tangential,,1000,0,0
+test well,test-3pt-tang-unk,Tangential,,6000,90,180
+test well,test-unk-tang-unk,Tangential,,0,0,0
+test well,test-unk-tang-unk,Tangential,,6000,90,180
+test well,test-2pt-unk-grid,,Grid North,0,0,0
+test well,test-2pt-unk-grid,,Grid North,6000,90,180
+test well,test-3pt-unk-grid,,Grid North,0,0,0
+test well,test-3pt-unk-grid,,Grid North,1000,0,0
+test well,test-3pt-unk-grid,,Grid North,6000,90,180
+test well,test-unk-unk-grid,,Grid North,0,0,0
+test well,test-unk-unk-grid,,Grid North,6000,90,180
+test well,test-2pt-unk-mag,,Magnetic North,0,0,0
+test well,test-2pt-unk-mag,,Magnetic North,6000,90,180
+test well,test-3pt-unk-mag,,Magnetic North,0,0,0
+test well,test-3pt-unk-mag,,Magnetic North,1000,0,0
+test well,test-3pt-unk-mag,,Magnetic North,6000,90,180
+test well,test-unk-unk-mag,,Magnetic North,0,0,0
+test well,test-unk-unk-mag,,Magnetic North,6000,90,180
+test well,test-2pt-unk-true,,True North,0,0,0
+test well,test-2pt-unk-true,,True North,6000,90,180
+test well,test-3pt-unk-true,,True North,0,0,0
+test well,test-3pt-unk-true,,True North,1000,0,0
+test well,test-3pt-unk-true,,True North,6000,90,180
+test well,test-unk-unk-true,,True North,0,0,0
+test well,test-unk-unk-true,,True North,6000,90,180
+test well,test-2pt-unk-unk,,,0,0,0
+test well,test-2pt-unk-unk,,,6000,90,180
+test well,test-3pt-unk-unk,,,0,0,0
+test well,test-3pt-unk-unk,,,1000,0,0
+test well,test-3pt-unk-unk,,,6000,90,180
+test well,test-unk-unk-unk,,,0,0,0
+test well,test-unk-unk-unk,,,6000,90,180
