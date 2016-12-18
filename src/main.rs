@@ -5,83 +5,22 @@
 #[macro_use]
 extern crate itertools;
 
-use std::fmt;
+mod kop;                // kick-off point
+mod method;             // survey computation method
+mod north;              // north reference
 
-// survey computation method
-#[derive(Copy, Clone, Debug, PartialEq)]
-enum ComputationMethod {
-    AverageAngle,
-    BalancedAngle,
-    MinimumCurvature,
-    RadiusOfCurvature,
-    Tangential,
-    UnknownCompMethod,
-}
+use kop::KickOffPoint;
+use method::ComputationMethod;
+use north::NorthReference;
 
-impl fmt::Display for ComputationMethod {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let display = match *self {
-            ComputationMethod::AverageAngle => "Average Angle",
-            ComputationMethod::BalancedAngle => "Balanced Angle",
-            ComputationMethod::MinimumCurvature => "Minium Curvature",
-            ComputationMethod::RadiusOfCurvature => "Radius of Curvature",
-            ComputationMethod::Tangential => "Tangential",
-            _ => "",
-        };
-        write!(f, "{}", display)
-    }
-}
-
-// azimuth North reference
-#[derive(Copy, Clone, Debug, PartialEq)]
-enum NorthReference {
-    GridNorth,
-    MagneticNorth,
-    TrueNorth,
-    UnknownNorthRef,
-}
-
-impl fmt::Display for NorthReference {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let display = match *self {
-            NorthReference::GridNorth => "Grid North",
-            NorthReference::MagneticNorth => "Magnetic North",
-            NorthReference::TrueNorth => "True North",
-            _ => "",
-        };
-        write!(f, "{}", display)
-    }
-}
-
-// depth of kick off point, feet is assumed for now
-#[derive(Copy, Clone, Debug, PartialEq)]
-enum KickOffPoint {
-    KOP(u32),
-    FromSurface,
-    UnknownKOP,
-}
-
-impl fmt::Display for KickOffPoint {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match *self {
-            KickOffPoint::KOP(depth) => write!(f, "kick off from {}", depth),
-            KickOffPoint::FromSurface => write!(f, "From Surface"),
-            _ => write!(f, ""),
-        }
-    }
-}
-
-fn write_header() {
-    println!("UWI,Name,Method,North Reference,Md,Inclination,Azimuth");
-}
-
-fn generate_survey_name(survey_name: &str,
-                 m: ComputationMethod,
-                 r: NorthReference,
-                 k: KickOffPoint)
-                 -> String {
+// given a prefix and options, make a mnemonic survey name
+fn generate_survey_name(survey_prefix: &str,
+                        m: ComputationMethod,
+                        r: NorthReference,
+                        k: KickOffPoint)
+                        -> String {
     let mut name = String::new();
-    name.push_str(survey_name);
+    name.push_str(survey_prefix);
     match k {
         KickOffPoint::KOP(_) => name.push_str("-3pt"),
         KickOffPoint::FromSurface => name.push_str("-2pt"),
@@ -104,8 +43,13 @@ fn generate_survey_name(survey_name: &str,
     name
 }
 
-// print deviation survey to stdout
-fn generate_survey(uwi: &str, m: ComputationMethod, r: NorthReference, k: KickOffPoint) {
+
+fn write_survey_header() {
+    println!("UWI,Name,Method,North Reference,Md,Inclination,Azimuth");
+}
+
+// write a single 2pt or 3pt survey
+fn write_survey(uwi: &str, m: ComputationMethod, r: NorthReference, k: KickOffPoint) {
     let survey_name = generate_survey_name("test", m, r, k);
     println!("{},{},{},{},{},{},{}", uwi, survey_name, m, r, 0, 0, 0);
     match k {
@@ -125,7 +69,10 @@ fn generate_survey(uwi: &str, m: ComputationMethod, r: NorthReference, k: KickOf
 }
 
 fn main() {
+    // this should specified on the command-line
     let uwi = "test well";
+
+    // survey computation methods
     let methods = vec![ComputationMethod::AverageAngle,
                        ComputationMethod::BalancedAngle,
                        ComputationMethod::MinimumCurvature,
@@ -133,16 +80,19 @@ fn main() {
                        ComputationMethod::Tangential,
                        ComputationMethod::UnknownCompMethod];
 
+    // north reference methods
     let references = vec![NorthReference::GridNorth,
                           NorthReference::MagneticNorth,
                           NorthReference::TrueNorth,
                           NorthReference::UnknownNorthRef];
 
+    // KOP at surface makes a 2pt survey, KOP with depth gives a 3pt survey
     let kops = vec![KickOffPoint::FromSurface, KickOffPoint::KOP(1000), KickOffPoint::UnknownKOP];
 
-    // print survey to stdout
-    write_header();
+    // write a survey header followed by 2pt and 3pt surveys generated
+    // with cartesian product of above options
+    write_survey_header();
     for (m, r, k) in iproduct!(methods, references, kops) {
-        generate_survey(&uwi, m, r, k);
+        write_survey(&uwi, m, r, k);
     }
 }
