@@ -1,4 +1,5 @@
 use std::fmt;
+use SurveyMnemonic;
 
 // depth of kick off point, feet is assumed for now
 #[derive(Copy, Clone, Debug, PartialEq)]
@@ -15,5 +16,17 @@ impl fmt::Display for KickOffPoint {
             KickOffPoint::FromSurface => write!(f, "From Surface"),
             _ => write!(f, ""),
         }
+    }
+}
+
+impl SurveyMnemonic for KickOffPoint {
+    fn mnemonic(&self) -> String {
+        let mut mn = String::new();
+        match *self {
+            KickOffPoint::KOP(_) => mn.push_str("-3pt"),
+            KickOffPoint::FromSurface => mn.push_str("-2pt"),
+            _ => mn.push_str("-unk"),
+        }
+        mn
     }
 }
